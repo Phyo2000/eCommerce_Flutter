@@ -13,6 +13,8 @@ class PopularCategoryLoadingCard extends StatelessWidget {
         shadowColor: Colors.grey.shade300,
         borderRadius: BorderRadius.circular(10),
         child: Shimmer.fromColors(
+            baseColor: Colors.grey.shade300,
+            highlightColor: Colors.white,
             child: Container(
               width: 270,
               height: 140,
@@ -20,9 +22,7 @@ class PopularCategoryLoadingCard extends StatelessWidget {
                 color: Colors.grey.shade300,
                 borderRadius: BorderRadius.circular(10),
               ),
-            ),
-            baseColor: Colors.grey.shade300,
-            highlightColor: Colors.white),
+            )),
       ),
     );
   }
